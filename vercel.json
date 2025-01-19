@@ -1,0 +1,16 @@
+{
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/next",
+        "config": {
+          "outputDirectory": "core/.next"  
+        }
+      }
+    ],
+    "output": {
+      "dir": "core/.next",  
+      "exclude": ["core/.next/cache/**"]
+    }
+  }
+  
